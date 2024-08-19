@@ -1,0 +1,135 @@
+/* styles.css */
+
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0%;
+}
+
+.logo-nav-contenedor nav img {
+    max-width: 80px; /* La imagen no será más ancha que su contenedor */
+    height: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3B5DAC;
+    padding: 10px;
+
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+
+
+.nav-menu a:hover {
+    color: #ddd;
+    background: gray;
+}
+
+
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+}
+  /*celdas*/
+
+.celdas {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column; /* Cambia la dirección del flujo a columna */
+    width: 100%;
+    align-items: center; /* Centra las celdas horizontalmente */
+    margin-bottom: 20px;
+}
+
+
+.cell {
+    border: 1px solid #333;
+    padding: 20px;
+    width: 80%; /* Ajusta el ancho de las celdas */
+    text-align: left;
+    margin-bottom: 10px; /* Agrega espacio entre las celdas */
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.main {
+    padding: 8rem;
+}
+
+
+.footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: #3B5DAC;
+}

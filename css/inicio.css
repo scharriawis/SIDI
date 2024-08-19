@@ -1,0 +1,120 @@
+/* styles.css */
+
+/* Reset de márgenes y paddings */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; */
+/* } */
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    margin: 0%;
+}
+
+ 
+.logo-nav-contenedor nav img {
+    max-width: 80px; /* La imagen no será más ancha que su contenedor */
+    height: auto;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3B5DAC;
+    padding: 10px;
+
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    right: 0%;
+    
+}
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu  a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 0.5rem 2 rem;
+    transition: all 0.45 linear;
+    border-radius: 5px;
+}
+
+.nav-menu a:hover {
+    color: white;
+    background: gray;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        display: none;
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .nav-menu li {
+        margin: 10px 0;
+    }
+
+    img {
+        display: flex;
+    }
+}
+
+
+
+main div {
+        display: grid;
+        place-items: center; /* Centra horizontal y verticalmente */
+        height: 50vh;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+
+    .footer {
+        margin: 400px 0px 0px 0px; 
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-align: center;
+        background-color: #3B5DAC;
+ 
+        
+    }

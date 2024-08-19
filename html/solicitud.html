@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud</title>
+    <link rel="stylesheet" href="/css/solicitud-styles.css">
+    <link rel="icon" href="/img/logo S.I.D.I..png" type="image/png" sizes="16x16">
+</head>
+<body>
+
+    <!--de la barra de menus-->
+    <header>
+        
+    <div class="contenedor logo-nav-contenedor">
+        <nav class="navbar" id="barraNavegacion">
+            <img src="/img/logo S.I.D.I..png" alt="logo">
+            <button class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="/html/inicio.html">Inicio</a></li>
+                <li><a href="/html/solicitud.html">solicitud</a></li>
+                <li><a href="/html/Estado-Solicitud.html">Estado solicitud</a></li>
+                <li><a href="">opciones</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <!--logo-->
+    <!--codigo para seleccionar tipo de documento-->
+    <main class="main">
+    <div class="documento">
+        <label for="proceso-seleccionado">Seleccione tipo de documento</label>
+        <select id="proceso-seleccionado">
+            <option value="" disabled selected>Elija una opción</option>
+            <option value="facturas entidades">facturas entidades</option>
+            <option value="facturas particular">facturas particular</option>
+            <option value="otro document">otro document</option>
+        </select>
+        <button id="boton-enviar">aceptar</button>
+        <div id="resultado"></div>
+
+     <!--codigo para seleccionar fecha-->
+
+        <div class="selecion-fecha">
+            <label for="date-picker">Seleccione una fecha:</label>
+            <input type="date" id="date-picker">
+            <button id="submit-button">Aceptar</button>
+            <div id="output"></div>
+        </div>
+    
+        <div class="detallada">
+            <h3>En el siguiente cuadro realizar la solicitud detallada</h3>
+        </div>
+        
+
+    <div class="text-container">
+        <h1>Ingrese su Información</h1>
+        <div id="editableDiv" contenteditable="true" class="editable-div">
+            Escribe tu texto aquí...
+        </div>
+        <button onclick="saveText()">Guardar</button>
+        <div id="result"></div>
+    </div>
+</main>
+
+    <footer class="footer">
+        <div class="pie-pagina">
+            <h3>politicas de privacidad</h3>
+            <h3>datos de contacto</h3>
+            <h3>324456</h3>
+            <h3>sidienterprice@mail.com</h3>
+          </div>
+        </footer>
+        
+
+    <script src="/js/solicitud.js"></script>
+</body>
+</html>
